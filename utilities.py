@@ -90,6 +90,23 @@ def add_EMA(data,col_name,n,alpha):
             ema[i] = wsum
     data[label] = ema
 
+#Mean Squared Error between observed and predicted
+def MSE(pred, obs):
+    if len(obs) != len(pred):
+        print("Error - inputs must be same length")
+        return 0
+    ErrorSum = 0
+    for i in range(len(pred)):
+        error = (obs[i] - pred[i])**2
+        ErrorSum += error
+    return ErrorSum/len(pred)
+
+#Root Mean Squared Error between observed and predicted
+def RMSE(pred, obs):
+    from math import sqrt
+    return sqrt(MSE(pred,obs))
+
+
 
 
 
