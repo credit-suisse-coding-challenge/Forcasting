@@ -153,7 +153,7 @@ def generate_auto_corr(data,show):
         plt.legend(loc='upper left')
         plt.title("Treasury Portfolio AutoCorrelations")
         plt.xlabel("Lag")
-        plt.ylabel("ACF")
+        plt.ylabel("AC")
         plt.show()
     return corr
 
