@@ -15,3 +15,10 @@ if __name__ == '__main__':
     # Seperate the first 64 objects as a training set and a testing set
     train = data[0:63]
     test = data[63:]
+
+    headers = ['total_value','Fixed_Income','Deposits','Other_liabilities','Secured_Funding','Unsecured_Funding','Equities']
+    for header in headers:
+        data[header].hist()
+        plt.title(header)
+        plt.ylabel("Frequency")
+        plt.show()
