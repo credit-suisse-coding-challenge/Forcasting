@@ -101,6 +101,11 @@ def MSE(pred, obs):
         ErrorSum += error
     return ErrorSum/len(pred)
 
+#Root Mean Squared Error between observed and predicted
+def RMSE(pred, obs):
+    from math import sqrt
+    return sqrt(MSE(pred,obs))
+
 
 
 
