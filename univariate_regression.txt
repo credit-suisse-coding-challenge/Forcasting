@@ -1,0 +1,36 @@
+LAG: 1
+total_value --- slope: 0.4627650700991737  intercept: 46416222.893298514
+Fixed_Income --- slope: 0.7894564078186438  intercept: 905208.6573505625
+Deposits --- slope: 0.48444422815127836  intercept: 39598857.87350007
+Other_liabilities --- slope: 0.9288163726114939  intercept: 329997.7381728743
+Secured_Funding --- slope: 0.7746609009632484  intercept: 62484.90826457797
+Unsecured_Funding --- slope: 0.8476250340129222  intercept: 51119.45744458516
+Equities --- slope: 0.8719153079574121  intercept: 53553.72296746966
+
+LAG: 2
+total_value --- slope: 0.29643188805154586  intercept: 60836385.52359833
+Fixed_Income --- slope: 0.7229957805597543  intercept: 1199480.694819883
+Deposits --- slope: 0.31574812404471114  intercept: 52588850.15056105
+Other_liabilities --- slope: 0.8896470364423795  intercept: 523003.2374221538
+Secured_Funding --- slope: 0.6485735536978684  intercept: 97520.98230023554
+Unsecured_Funding --- slope: 0.8191319310399163  intercept: 60364.43987647694
+Equities --- slope: 0.7468899831440098  intercept: 105866.0831972246
+
+LAG: 3
+total_value --- slope: 0.2300904687346365  intercept: 66557995.88400615
+Fixed_Income --- slope: 0.6479813022086088  intercept: 1528275.7984161028
+Deposits --- slope: 0.25589056871922394  intercept: 57148416.40809858
+Other_liabilities --- slope: 0.8532232349760294  intercept: 702892.9268786726
+Secured_Funding --- slope: 0.5876349462970543  intercept: 114453.79511041965
+Unsecured_Funding --- slope: 0.7922027411201875  intercept: 69114.43261735002
+Equities --- slope: 0.6445818880272665  intercept: 148740.51239899755
+
+LAG: 4
+total_value --- slope: 0.18222448994330667  intercept: 70718323.8469772
+Fixed_Income --- slope: 0.6628789424580774  intercept: 1480900.0644228933
+Deposits --- slope: 0.22048952498460106  intercept: 59856553.48493905
+Other_liabilities --- slope: 0.8117018991641729  intercept: 903227.7607211145
+Secured_Funding --- slope: 0.5998812586849646  intercept: 110941.72515266016
+Unsecured_Funding --- slope: 0.74158504675616  intercept: 85850.17676924431
+Equities --- slope: 0.6131850861330905  intercept: 161743.82248384116
+

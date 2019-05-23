@@ -16,9 +16,17 @@ if __name__ == '__main__':
     train = data[0:63]
     test = data[63:]
 
+
     headers = ['total_value','Fixed_Income','Deposits','Other_liabilities','Secured_Funding','Unsecured_Funding','Equities']
-    for header in headers:
-        data[header].hist()
-        plt.title(header)
-        plt.ylabel("Frequency")
-        plt.show()
+    from scipy import stats
+    lag = 1
+    for lag in range(1,5):
+        print("LAG: " + str(lag))
+        for header in headers:
+            lagged = header + "_lag_" + str(lag)
+            data[lagged] = data[header].shift(lag)
+            slope, intercept, r_value, p_value, std_err = stats.linregress(np.asarray(data[lagged])[lag:],np.asarray(data[header])[lag:])
+            # print(header,slope, intercept, r_value, p_value, std_err,sep = " , ")
+            # print(header,r_value**2,sep = " : ")
+            print(header + " --- slope: " + str(slope) + "  intercept: " + str(intercept))
+        print()
