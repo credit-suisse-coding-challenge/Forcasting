@@ -56,8 +56,8 @@ def standard_tests(column, train_percent, file_name):
 def ARIMA_model(train, test):
     '''
     This uses the Autoregressive Integrated Moving Average model
-    to predict the next five values. It returns the RMSA associated
-    with this model on the given data.
+    to predict the next five values. 
+    Returns: the RMSE and the predicted values for the next 5 days.
     '''
     y_hat = test.copy()
     fit = sm.tsa.statespace.SARIMAX(train).fit()
@@ -72,7 +72,7 @@ def moving_avg_model(train, test):
     '''
     This function plots the moving average model given a train and test set to work
     on.
-    Returns: The RMSA value assocated with the given model on the given data
+    Returns: The RMSE value assocated with the given model on the given data
     '''
     y_hat = test.copy()
     moving_avg = train.rolling(60).mean().iloc[-1]
@@ -86,7 +86,7 @@ def naive_approach(train, test):
     '''
     This function computes the naive approach model. It plots the
     predicted values and returns the RMSA value associated with this
-    model
+    model.
     Returns: The RMSA value assocated with the given model and data
     '''
     dd = np.asarray(train)
@@ -114,8 +114,8 @@ def holts_linear_model(train, test):
 
 def compute_RMSE(test, computed):
     '''
-    This function computs a the RMSA value given a test column
-    and the predicted output
+    This function computs a the Root Mean Squared Error (RMSE) value
+    given a test column and the predicted output
     '''
     return sqrt(mean_squared_error(test, computed))
 
