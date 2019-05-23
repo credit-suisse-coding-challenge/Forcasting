@@ -70,7 +70,7 @@ def ARIMA_model(train, test):
         train) + len(test) + 5, dynamic=True)
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label="ARIMA")
-    return compute_RMSE(test, y_hat[:-5]), y_hat[:-5]
+    return compute_RMSE(test, y_hat[:-5]), y_hat[-5:]
 
 
 def moving_avg_model(train, test):
@@ -80,11 +80,11 @@ def moving_avg_model(train, test):
     Returns: The RMSE value assocated with the given model on the given data
     '''
     y_hat = test.copy()
-    moving_avg = train.rolling(60).mean().iloc[-1]
+    moving_avg = train.rolling(5).mean().iloc[-1]
     y_hat = [moving_avg] * (len(test) + 5)
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label='Moving Average Forecast')
-    return compute_RMSE(test, y_hat[:-5]), y_hat[:-5]
+    return compute_RMSE(test, y_hat[:-5]), y_hat[-5:]
 
 
 def naive_approach(train, test):
@@ -100,7 +100,7 @@ def naive_approach(train, test):
     y_hat = [avg_naive] * (len(test) + 5)
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label='Naive Forecast')
-    return compute_RMSE(test, y_hat[:-5]), y_hat[:-5]
+    return compute_RMSE(test, y_hat[:-5]), y_hat[-5:]
 
 
 def holts_linear_model(train, test):
@@ -114,7 +114,7 @@ def holts_linear_model(train, test):
     y_hat = fit1.forecast(len(test) + 5)
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label='Holt Linear')
-    return compute_RMSE(test, y_hat[:-5]), y_hat[:-5]
+    return compute_RMSE(test, y_hat[:-5]), y_hat[-5:]
 
 
 def compute_RMSE(test, computed):

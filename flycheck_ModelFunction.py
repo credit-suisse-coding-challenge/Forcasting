@@ -71,7 +71,7 @@ def ARIMA_model(train, test):
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label="ARIMA")
     return compute_RMSE(test, y_hat[:-5]), y_hat[-5:]
-p
+
 
 def moving_avg_model(train, test):
     '''
@@ -80,7 +80,7 @@ def moving_avg_model(train, test):
     Returns: The RMSE value assocated with the given model on the given data
     '''
     y_hat = test.copy()
-    moving_avg = train.rolling(60).mean().iloc[-1]
+    moving_avg = train.rolling().mean().iloc[-1]
     y_hat = [moving_avg] * (len(test) + 5)
     plt.plot(range(len(train), len(train) + len(test) + 5),
              y_hat, label='Moving Average Forecast')
