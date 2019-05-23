@@ -1,0 +1,90 @@
+LAG = 0
+total_value : 1.0
+Fixed_Income : 1.0
+Deposits : 1.0
+Other_liabilities : 0.9999999999999998
+Secured_Funding : 0.9999999999999999
+Unsecured_Funding : 1.0
+Equities : 1.0
+
+LAG = 1
+total_value : 0.47080428975855054
+Fixed_Income : 0.7788074610886814
+Deposits : 0.49470548850710816
+Other_liabilities : 0.9340929688770069
+Secured_Funding : 0.746694691932129
+Unsecured_Funding : 0.8752204785905152
+Equities : 0.920136296382385
+
+LAG = 2
+total_value : 0.3009324644810074
+Fixed_Income : 0.7343079863843055
+Deposits : 0.3215953623822049
+Other_liabilities : 0.9032658389588129
+Secured_Funding : 0.6216399763457795
+Unsecured_Funding : 0.8644330947893933
+Equities : 0.8218398986747699
+
+LAG = 3
+total_value : 0.2330587862049147
+Fixed_Income : 0.6566630404816117
+Deposits : 0.25999539559266244
+Other_liabilities : 0.874305877861564
+Secured_Funding : 0.563448496516172
+Unsecured_Funding : 0.8496797819824737
+Equities : 0.7191150239440881
+
+LAG = 4
+total_value : 0.18393886581894628
+Fixed_Income : 0.685825386173967
+Deposits : 0.22303557699563584
+Other_liabilities : 0.8402180807392253
+Secured_Funding : 0.5759938559784216
+Unsecured_Funding : 0.8114284949498709
+Equities : 0.6834316288689497
+
+LAG = 5
+total_value : 0.08270778412784235
+Fixed_Income : 0.658916625542595
+Deposits : 0.15569624769684887
+Other_liabilities : 0.7974462161776211
+Secured_Funding : 0.5541755515719503
+Unsecured_Funding : 0.7841987727898884
+Equities : 0.6518895678891418
+
+LAG = 6
+total_value : -0.01898872502959929
+Fixed_Income : 0.5950892587448191
+Deposits : 0.07168463316761638
+Other_liabilities : 0.7846484753283737
+Secured_Funding : 0.4693523071647917
+Unsecured_Funding : 0.7386000377457604
+Equities : 0.5795147629295168
+
+LAG = 7
+total_value : 0.0013450206333049735
+Fixed_Income : 0.5218364008086559
+Deposits : 0.09122095960831211
+Other_liabilities : 0.7351728778913015
+Secured_Funding : 0.45666728790958344
+Unsecured_Funding : 0.7121772339247753
+Equities : 0.5051253574142782
+
+LAG = 8
+total_value : -0.011439667447756928
+Fixed_Income : 0.4672628974711794
+Deposits : 0.08015595865783057
+Other_liabilities : 0.6979937448625864
+Secured_Funding : 0.3363064394289051
+Unsecured_Funding : 0.6999255180449059
+Equities : 0.4509227086748187
+
+LAG = 9
+total_value : -0.037126980697009405
+Fixed_Income : 0.45128098755530693
+Deposits : 0.06395410940849519
+Other_liabilities : 0.6631355109282526
+Secured_Funding : 0.28130422713890146
+Unsecured_Funding : 0.6624566741441722
+Equities : 0.4433344753011487
+
