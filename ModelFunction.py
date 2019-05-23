@@ -1,10 +1,15 @@
+#!/usr/bin/env python
+from math import sqrt, floor
+from sklearn.metrics import mean_squared_error
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels as st
 import statsmodels.api as sm
-from sklearn.metrics import mean_squared_error
-from math import sqrt, floor
+
+
+__author__ = "McGwire Jones, Dominick Harasimiuk, and Chris Maye"
+__status__ = "Production"
 
 
 data = pd.read_csv("Treasury_Portfolio_No_Commas.csv")
